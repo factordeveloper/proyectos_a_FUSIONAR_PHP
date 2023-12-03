@@ -144,7 +144,7 @@
         }
         // Enviamos los datos al archivo PHP encargado de actualizar el elemento en la base de datos
         fetch(`api/usuario.php?id=${id}&opcion=modificar`, {
-            method: "POST",
+            method: "PUT",
             body: JSON.stringify({ id, nombre, correo }),
             headers: {
                 "Content-Type": "application/json",
